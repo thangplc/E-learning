@@ -1,0 +1,54 @@
+.cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://img-c.udemycdn.com/notices/web_banner/image_udlite/10013898-4c44-4f6c-879e-68d0e93a1f4d.jpg");
+  // background-image: url("./cover.jpg");
+  height: 500px;
+  position: relative;
+
+  .cover__content {
+    @apply py-12 px-9 text-black text-justify;
+    transform: translateY(-50%);
+    box-shadow: 9px 9px 11.6px -5px rgba(0, 0, 0, 0.047),
+      5px 12px 20px -10px rgba(0, 0, 0, 0.23);
+
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    background: #fff;
+    max-width: 380px;
+    border-radius: 0px;
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 15px;
+      font-weight: normal;
+    }
+    .cover__form {
+      .input-group {
+        background-color: #fff;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+.cover .cover__content .cover__form .input-group .form-control::placeholder {
+  color: #505763;
+}
+
+@media screen and (max-width: 576px) {
+  .cover .cover__content {
+    max-width: 280px;
+    left: 10%;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
